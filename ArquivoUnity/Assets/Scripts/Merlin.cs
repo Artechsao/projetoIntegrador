@@ -6,6 +6,12 @@ public class Merlin : MonoBehaviour
 {
     private float velocidadeHorizontal = 0.1f;
     private float velocidadeVoo = 0.1f;
+    Rigidbody2D corpoMerlin;
+
+    private void Awake()
+    {
+        corpoMerlin = GetComponent<Rigidbody2D>();
+    }
 
     // Start is called before the first frame update
     void Start()
